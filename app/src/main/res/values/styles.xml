@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/Dark_color_7</item> <!-- colorPrimary theme For Action Bar. -->
+        <item name="colorPrimaryDark">@color/Dark_color_8</item> <!--colorPrimaryDark For StatusBar. -->
+        <item name="colorAccent">@color/colorAccent</item> <!-- colorAccent -->
+    </style>
+    <string-array name="counter_code">
+        <item>+1</item>
+        <item>+2</item>
+        <item>+3</item>
+        <item>+4</item>
+        <item>+5</item>
+        <item>+6</item>
+        <item>+7</item>
+        <item>+8</item>
+        <item>+9</item>
+        <item>+10</item>
+        <item>+11</item>
+        <item>+91</item>
+    </string-array>
+</resources>

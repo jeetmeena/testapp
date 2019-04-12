@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VisitorPhoneNumber"
+    android:clickable="true"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+         >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".7"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+
+                />
+
+            <ImageButton
+                android:id="@+id/start_camera_view"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/userImage"
+                android:layout_marginLeft="-22dp"
+                android:layout_marginBottom="-4dp"
+                android:layout_toRightOf="@id/userImage"
+                android:background="@drawable/ic_camera_alt_black_24dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                 android:id="@+id/line1"
+                android:gravity="center"
+                >
+                <Spinner
+                    android:id="@+id/spinner_counter_code"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".28"
+                    android:layout_marginRight="5dp"
+
+
+                    >
+
+                </Spinner>
+                <EditText
+                    android:id="@+id/editText_phone_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_round"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/line2"
+                android:gravity="center"
+                android:layout_below="@id/line1"
+                ><TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".23"
+                    android:text="Name"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                 />
+                <EditText
+                    android:id="@+id/edittext_username"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="  Full Name"
+                    android:maxLines="1"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/line1"
+                    android:background="@drawable/edittext_round"
+
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_sign_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line2"
+                android:layout_centerHorizontal="true"
+                android:text="sign in"
+                android:background="@drawable/button_round"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/child__camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+  </RelativeLayout>
+
+</FrameLayout>

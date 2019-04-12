@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".VisitorImageCapture"
+    android:clickable="true"
+    android:background="@color/Dark_color_5"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="6dp"
+        >
+
+        <com.camerakit.CameraKitView
+            android:id="@+id/canera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:keepScreenOn="true"
+            app:camera_flash="auto"
+            app:camera_facing="front"
+            app:camera_focus="continuous"
+            app:camera_permissions="camera"
+            />
+        <ImageButton
+            android:id="@+id/button_camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_camera_black_24dp"
+            android:layout_alignBottom="@id/canera"
+            android:layout_marginBottom="40dp"
+            android:layout_centerHorizontal="true"
+
+
+            />
+    </RelativeLayout>
+
+
+</FrameLayout>
